@@ -1,0 +1,48 @@
+@import "https://fonts.googleapis.com/css?family=Roboto Mono:400&display=swap";
+
+*{margin:0;padding:0;box-sizing:border-box;outline:none;font:inherit;list-style:none;}
+
+html,body{width:100%;height:100%;}
+body{font-size:1rem;font-family:"Roboto Mono",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";line-height:1.8;}
+
+a{text-decoration:none;}
+
+a:active,button:active,input:active{opacity:.6;}
+
+.panel{position:fixed;left:0;width:100%;z-index:3;padding:26px 10px;line-height:26px;}
+.panel-top{top:0;}
+.panel-bottom{bottom:0;}
+.panel-dark,.panel-dark a{color:#fff;fill:#fff;}
+.panel-top.panel-dark{background:linear-gradient(to bottom,rgba(0,0,0,.26) 0%,rgba(0,0,0,0) 100%);}
+.panel-bottom.panel-dark{background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.26) 100%);}
+.panel-light,.panel-light a{color:#262626;fill:#262626;}
+.panel-top.panel-light{background:linear-gradient(to bottom,rgba(255,255,255,.26) 0%,rgba(255,255,255,0) 100%);}
+.panel-bottom.panel-light{background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,.26) 100%);}
+
+.panel>*{float:left;margin:0 26px;}
+.panel img,.panel svg{vertical-align:middle;}
+
+.panel-brand{display:block;line-height:36px;}
+.panel-brand img,.panel-brand svg{height:26px;}
+
+.panel-nav ul{margin:0 -18px;}
+.panel-nav ul:before,.panel-nav ul:after{content:"";display:table;clear:both;}
+.panel-nav ul li{float:left;display:inline-block;}
+.panel-nav ul li a{display:block;line-height:36px;padding:0 18px;}
+.panel-nav ul li img,.panel-nav ul li svg{height:18px;}
+
+.panel-right{float:right;}
+
+.slide{width:100%;height:100%;position:relative;}
+.slide-content{position:absolute;top:0;left:0;display:table;width:100%;height:100%;z-index:2;}
+.slide-content-center{display:table-cell;width:100%;height:100%;vertical-align:middle;padding:50px;}
+.slide-background{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background-size:cover !important;background-position:center !important}
+.slide-content-dark{color:#fff;background-color:rgba(16,26,36,.6);}
+.slide-content-light{color:#262626;background-color:rgba(226,226,236,.8);}
+
+.content-centered{width:640px;margin:0 auto;max-width:100%;}
+
+.embed-16by9{display:block;position:relative;padding-bottom:56.25%;padding-top:25px;height:0;}
+.embed-16by9 iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+.shadow-raised{box-shadow:0 4px 20px rgba(0,0,0,.12),0 50px 70px rgba(0,0,0,.4)};
